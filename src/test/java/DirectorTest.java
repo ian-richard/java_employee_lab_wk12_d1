@@ -1,5 +1,7 @@
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 import staff.Management.Director;
 import staff.Management.Manager;
 
@@ -54,7 +56,7 @@ public class DirectorTest {
     }
 
     @Test
-    public void raiseSalary(){
+    public void raiseSalary_positiveNumber(){
         assertEquals(20200, director.raiseSalary(1.0), 0.1);
     }
 
