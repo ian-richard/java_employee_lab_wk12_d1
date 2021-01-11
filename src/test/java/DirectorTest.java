@@ -10,12 +10,12 @@ public class DirectorTest {
 
     @Before
     public void before(){
-        director = new Director("PM", 004, 20000, "Gov", 100000);
+        director = new Director("PM", 004, 20000, "Gov", 100000.00);
     }
 
     @Test
     public void hasBudget(){
-        assertEquals(100000, director.getBudget());
+        assertEquals(100000.00, director.getBudget(), 0.1);
     }
     @Test
     public void managerHasNiNumber(){

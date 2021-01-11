@@ -4,14 +4,14 @@ import staff.Employee;
 
 public class Director extends Manager {
 
-    private int budget;
+    private Double budget;
 
-    public Director(String name, int niNumber, int salary, String deptName, int budget){
+    public Director(String name, int niNumber, int salary, String deptName, Double budget){
         super(name, niNumber, salary, deptName);
         this.budget = budget;
     }
 
-    public int getBudget(){
+    public Double getBudget(){
         return this.budget;
     }
 
